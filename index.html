@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Gene Chou</title>
+
+  <meta name="author" content="Gene Chou">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/seal_icon.png">
+</head>
+
+<body>
+  <table
+    style="width:100%;max-width:1080px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr style="padding:0px">
+                <td style="padding:2.5%;width:63%;vertical-align:middle">
+                  <p style="text-align:left">
+                    <name>Gene Chou</name>
+                  </p>
+                  <p> I am a research assistant in the <a href="https://light.princeton.edu/">Princeton Computational Imaging
+                      Lab</a>, advised by Professor <a href="https://www.cs.princeton.edu/~fheide/">Felix Heide</a>.
+                    I received my bachelor's in computer science and math from <a href="https://www.cs.princeton.edu/">Princeton University</a> and I am applying to PhD programs this year. My research interests are in 3D scene reconstructions and implicit neural functions. 
+                   </p>
+                  <!-- begone bot -->
+                  <p><b>Contact:</b> gchou@princeton.edu</p>
+
+                  <p style="text-align:center">
+                    <a href="index.html#CV">CV</a> &nbsp/&nbsp
+                    <a href="https://github.com/gene-chou/">Github</a> &nbsp/&nbsp
+                    <a href="https://www.linkedin.com/in/gene-chou">LinkedIn</a> 
+                  </p>
+                </td>
+
+                <!-- PROFILE -->
+                <td onmouseout="profile_stop()" onmouseover="profile_start()" style="padding:2.5%;width:25%;vertical-align:top">
+                  <div class="one">
+                  <div class="two" id='profile_one'>
+                    <img src='images/profile.png' width="130%">
+                  <!-- </div> -->
+  <!--                 <div class="two" id='profile_two'>
+                    <video width="100%" autoplay loop muted>
+                    <source src='images/profile_after.webm' type='video/webm'/>
+                    </video>
+                  </div> -->
+                <!-- </div> -->
+                  <!-- <script type="text/javascript">
+                    function profile_start() {
+                      document.getElementById('profile_one').style.opacity = "0";
+                      document.getElementById('profile_two').style.opacity = "1";
+                    }
+
+                    function profile_stop() {
+                      document.getElementById('profile_one').style.opacity = "1";
+                      document.getElementById('profile_two').style.opacity = "0";
+                    }
+                    profile_stop()
+                  </script> -->
+                </td>
+                <!-- /PROFILE -->
+
+                <!-- <td style="padding:2.5%;width:25%;max-width:25%">
+                  <a href="images/profile.png"><img style="width:100%;max-width:100%" alt="profile photo"
+                      src="images/profile.png" class="hoverZoomLink"></a>
+                </td> -->
+
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:100%;vertical-align:top">
+                  <heading>Research</heading>
+                  <p>
+                    I'm currently working on the generalization of implicit neural functions, such as combining them with meta-learning and generative modeling.
+                  </p>
+                  <hr>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+
+              <!-- BEGIN PAPERS -->
+
+              <!-- PAPER -->
+              <tr onmouseout="gensdf_stop()" onmouseover="gensdf_start()">
+                <td style="padding:2.5%;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='gensdf'>
+                      <img src='images/gensdf_after.png' width="100%">
+                    </div> <!-- CHANGE -->
+                    <img src='images/gensdf_before.png' width="100%"> <!-- CHANGE -->
+                  </div>
+                  <script type="text/javascript">
+                    function gensdf_start() {
+                      document.getElementById('gensdf').style.opacity = "1";
+                    }
+
+                    function gensdf_stop() {
+                      document.getElementById('gensdf').style.opacity = "0";
+                    }
+                    gensdf_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle;">
+                  <!-- <a href="https://github.com/princeton-computational-imaging/gensdf"> -->
+                  <papertitle>GenSDF: Two-Stage Learning of Generalizable Signed Distance Functions
+                  </papertitle>
+                  <!-- </a> -->
+                  <br>
+                  <strong>Gene Chou</strong>,
+                  <a href="https://ilyac.info">Ilya Chugunov</a>,
+                  <a href="https://www.cs.princeton.edu/~fheide/">Felix Heide</a>
+                  <br>
+                  <em>NeurIPS</em>, 2022
+                  <br>
+                  [<a href="https://arxiv.org/pdf/2206.02780.pdf">Paper</a>] [<a href="https://github.com/princeton-computational-imaging/gensdf">Code</a>] [<a href="https://github.com/princeton-computational-imaging/gensdf">Project page</a>]
+                  <br>
+                  <p></p>
+                  <p>
+                    Neural signed distance functions (SDFs) are a compact and versatile way of representing 3D objects, but state-of-the-art methods for SDF estimation struggle to fit more than a few shapes at a time. This work presents a two stage semi-supervised meta-learning approach that learns generic shape priors to reconstruct over a hundred unseen object classes. 
+
+                  </p>
+                </td>
+              </tr>
+              <!-- /PAPER -->
+
+              <!-- CV -->
+              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                <tbody>
+                  <a name='CV'></a>
+                  <tr>
+                    <td>
+                      <heading> Curriculum Vitae </heading>
+                      <hr>
+
+                      <!-- <object data="data/Ilya-CV.pdf" type="application/pdf" width="100%" height="1000vh">
+                        <p>It appears you don't have a PDF plugin for this browser.
+                          <a href="data/Ilya-CV.pdf"> Click here to download the PDF file.</a>
+                        </p>
+                      </object> -->
+                      <iframe src="https://drive.google.com/file/d/131TqsWqEnVtuAYYOwTQXIdEsi3PrJyX1/preview" width="100%" height="1000vh" style="border: none;" allow="download"></iframe>
+
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+              <!-- \CV -->
+
+              <table
+                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+
+
+
+                  <tr>
+                    <td style="padding:0px">
+                      <br>
+                      <p style="text-align:right;font-size:8pt;color: gray;">
+                        Website template taken from <a href="https://jonbarron.info/" , style="font-size: 8pt">Jon
+                          Barron</a>.
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </td>
+      </tr>
+  </table>
+</body>
+
+</html>
