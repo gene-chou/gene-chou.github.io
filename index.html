@@ -29,7 +29,7 @@
                   </p>
                   <p> I am a research assistant in the <a href="https://light.princeton.edu/">Princeton Computational Imaging
                       Lab</a>, advised by Professor <a href="https://www.cs.princeton.edu/~fheide/">Felix Heide</a>.
-                    I received my bachelor's in computer science and math from <a href="https://www.cs.princeton.edu/">Princeton University</a> and I am applying to PhD programs this year. My research interests are in 3D scene reconstructions and implicit neural functions. 
+                    I received my bachelor's in computer science and math from <a href="https://www.cs.princeton.edu/">Princeton University</a> and I am applying to PhD programs this year. My research interests are in neural rendering and 3D scene representations. 
                    </p>
                   <!-- begone bot -->
                   <p><b>Contact:</b> gchou@princeton.edu</p>
@@ -84,7 +84,7 @@
                 <td style="padding:20px;width:100%;vertical-align:top">
                   <heading>Research</heading>
                   <p>
-                    I'm currently working on the generalization of implicit neural functions, such as combining them with meta-learning and generative modeling.
+                    I'm currently working on the generalization of object representations, specifically through neural signed distance functions.
                   </p>
                   <hr>
                 </td>
@@ -96,6 +96,49 @@
             <tbody>
 
               <!-- BEGIN PAPERS -->
+
+              <!-- PAPER -->
+              <tr onmouseout="diffusionsdf_stop()" onmouseover="diffusionsdf_start()">
+                <td style="padding:2.5%;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='diffusionsdf'>
+                      <img src='images/diffusionsdf_after.png' width="100%">
+                    </div> <!-- CHANGE -->
+                    <img src='images/diffusionsdf_before.png' width="100%"> <!-- CHANGE -->
+                  </div>
+                  <script type="text/javascript">
+                    function gensdf_start() {
+                      document.getElementById('diffusionsdf').style.opacity = "1";
+                    }
+
+                    function gensdf_stop() {
+                      document.getElementById('diffusionsdf').style.opacity = "0";
+                    }
+                    gensdf_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle;">
+                  <!-- <a href="https://github.com/princeton-computational-imaging/gensdf"> -->
+                  <papertitle>DiffusionSDF: Conditional Generative Modeling of Signed Distance Functions
+                  </papertitle>
+                  <!-- </a> -->
+                  <br>
+                  <strong>Gene Chou</strong>,
+                  <a href="https://sites.google.com/view/yuval-bahat/home">Yuval Bahat</a>,
+                  <a href="https://www.cs.princeton.edu/~fheide/">Felix Heide</a>
+                  <br>
+                  <em>Arxiv preprint (soon)</em>
+                  <br>
+                  <!-- [<a href="https://arxiv.org/pdf/2206.02780.pdf">Paper</a>] [<a href="https://github.com/princeton-computational-imaging/gensdf">Code</a>] [<a href="https://light.princeton.edu/publication/gensdf/">Project page</a>] -->
+                  <br>
+                  <p></p>
+                  <p>
+                    This work proposes a probabilistic generative model that generates clean and diverse 3D meshes conditioned on partial point clouds, single 2D images, and real-scanned point clouds. We also solve a learning problem of diffusing the weights of implicit neural functions while providing geometric guidance.
+
+                  </p>
+                </td>
+              </tr>
+              <!-- /PAPER -->
 
               <!-- PAPER -->
               <tr onmouseout="gensdf_stop()" onmouseover="gensdf_start()">
@@ -127,9 +170,9 @@
                   <a href="https://ilyac.info">Ilya Chugunov</a>,
                   <a href="https://www.cs.princeton.edu/~fheide/">Felix Heide</a>
                   <br>
-                  <em>NeurIPS, 2022</em>
+                  <em>NeurIPS, 2022 (Featured)</em>
                   <br>
-                  [<a href="https://arxiv.org/pdf/2206.02780.pdf">Paper</a>] [<a href="https://github.com/princeton-computational-imaging/gensdf">Code</a>] [<a href="https://light.princeton.edu/publication/gensdf">Project page</a>]
+                  [<a href="https://arxiv.org/pdf/2206.02780.pdf">Paper</a>] [<a href="https://github.com/princeton-computational-imaging/gensdf">Code</a>] [<a href="https://light.princeton.edu/publication/gensdf/">Project page</a>]
                   <br>
                   <p></p>
                   <p>
@@ -154,7 +197,7 @@
                           <a href="data/Ilya-CV.pdf"> Click here to download the PDF file.</a>
                         </p>
                       </object> -->
-                      <iframe src="https://drive.google.com/file/d/131TqsWqEnVtuAYYOwTQXIdEsi3PrJyX1/preview" width="100%" height="1000vh" style="border: none;" allow="download"></iframe>
+                      <iframe src="https://drive.google.com/file/d/1EISllf8Hx38-WMbdhV-jm_MJa4zvb0KT/preview" width="100%" height="1000vh" style="border: none;" allow="download"></iframe>
 
                     </td>
                   </tr>
@@ -174,7 +217,7 @@
                     <td style="padding:0px">
                       <br>
                       <p style="text-align:right;font-size:8pt;color: gray;">
-                        Website template taken from <a href="https://jonbarron.info/" , style="font-size: 8pt">Jon
+                        Website template borrowed from <a href="https://jonbarron.info/" , style="font-size: 8pt">Jon
                           Barron</a>.
                       </p>
                     </td>
