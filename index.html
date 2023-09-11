@@ -12,7 +12,7 @@
 
 
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/png" href="images/seal_icon.png">
+  <link rel="icon" type="image/png" href="images/cornell_seal.png">
 </head>
 
 <body>
@@ -29,15 +29,16 @@
                   <p style="text-align:left">
                     <name>Gene Chou</name>
                   </p>
-                  <p> I am a first year PhD student at <a href="https://www.cs.cornell.edu" target="_blank" rel="noopener noreferrer">Cornell University</a>, advised by <a href="https://www.cs.cornell.edu/~snavely/" target="_blank" rel="noopener noreferrer">Noah Snavely</a> and <a href="http://home.bharathh.info" target="_blank" rel="noopener noreferrer">Bharath Hariharan</a>. Previously, I received my bachelor's in computer science and math from <a href="https://www.cs.princeton.edu/" target="_blank" rel="noopener noreferrer">Princeton University</a>, where I was advised by <a href="https://www.cs.princeton.edu/~fheide/" target="_blank" rel="noopener noreferrer">Felix Heide</a>. My research focuses on 3D reconstruction and generation using multiple sources of supervision. 
+                  <p> I am a first year CS PhD student at <a href="https://www.cs.cornell.edu" target="_blank" rel="noopener noreferrer">Cornell University</a>, advised by <a href="https://www.cs.cornell.edu/~snavely/" target="_blank" rel="noopener noreferrer">Noah Snavely</a> and <a href="http://home.bharathh.info" target="_blank" rel="noopener noreferrer">Bharath Hariharan</a>. Previously, I received my bachelor's in computer science and math from <a href="https://www.cs.princeton.edu/" target="_blank" rel="noopener noreferrer">Princeton University</a>, where I was advised by <a href="https://www.cs.princeton.edu/~fheide/" target="_blank" rel="noopener noreferrer">Felix Heide</a>. My research focuses on 3D reconstruction and generation. 
                    </p>
                   <!-- begone bot -->
-                  <p><b>Contact:</b> gc492@cornell.edu</p>
+                  <p><b>Contact:</b> gene@cs.cornell.edu</p>
 
                   <!-- <p style="text-align:center"> -->
-                    <a href="index.html#CV">CV</a> &nbsp/&nbsp
-                    <a href="https://github.com/gene-chou/" target="_blank" rel="noopener noreferrer">Github</a> &nbsp/&nbsp
-                    <a href="https://www.linkedin.com/in/gene-chou" target="_blank" rel="noopener noreferrer">LinkedIn &nbsp/&nbsp
+                    <a href="index.html#CV">cv</a> &nbsp/&nbsp
+                    <a href="https://github.com/gene-chou/" target="_blank" rel="noopener noreferrer">github</a> &nbsp/&nbsp
+                    <a href="https://www.linkedin.com/in/gene-chou" target="_blank" rel="noopener noreferrer">linkedin &nbsp/&nbsp
+                    <a href="https://scholar.google.com/citations?user=FZN-I0QAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">google scholar &nbsp/&nbsp
                     <a href="https://photos.app.goo.gl/hP1RqUh3V7avxSG79" target="_blank" rel="noopener noreferrer">pictures of my cat</a> 
                   <!-- </p> -->
                 </td>
@@ -97,6 +98,46 @@
             <tbody>
 
               <!-- BEGIN PAPERS -->
+
+              <!-- PAPER -->
+              <tr onmouseout="image1()" onmouseover="image2()">
+                <td style="padding:2.5%;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='im2'>
+                      <img src='images/nanoarray1.png' width="100%">
+                    </div> <!-- CHANGE -->
+                    <img src='images/nanoarray1.png' width="100%"> <!-- CHANGE -->
+                  </div>
+                  <script type="text/javascript">
+                    function image2() {
+                      document.getElementById('im2').style.opacity = "1";
+                    }
+
+                    function image1() {
+                      document.getElementById('im2').style.opacity = "0";
+                    }
+                    image1()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle;">
+                  <!-- <a href="https://github.com/princeton-computational-imaging/gensdf"> -->
+                  <papertitle>Thin On-Sensor Nanophotonic Array Cameras
+                  </papertitle>
+                  <!-- </a> -->
+                  <br>
+                  Praneeth Chakravarthula, Jipeng Sun, Xiao Li, Chenyang Lei, <strong>Gene Chou</strong>, Mario Bijelic, Johannes Froesch, Arka Majumdar, Felix Heide
+                  <br>
+                  <em>SIGGRAPH ASIA 2023</em>
+                  <br>
+                  <a href="https://arxiv.org/abs/2308.02797" target="_blank" rel="noopener noreferrer">paper</a> 
+                  <br>
+                  <p></p>
+                  <p>
+                    Recovers images in broadband using a single flat metasurface optic. Compensates for residual aberrations with probabilistic deconvolution implemented using a conditional diffusion model.
+                  </p>
+                </td>
+              </tr>
+              <!-- /PAPER -->
 
               <!-- PAPER -->
               <tr onmouseout="diffusionsdf_stop()" onmouseover="diffusionsdf_start()">
@@ -190,7 +231,7 @@
                   <a name='CV'></a>
                   <tr>
                     <td>
-                      <heading> Curriculum Vitae </heading>
+                      <heading> CV </heading>
                       <hr>
                       <!-- <iframe src="https://drive.google.com/file/d/1V7_FVDFZVxIJX5AbhbZdkZMJrrXH4uDk/preview" width="100%" height="1000vh" style="border: none;" allow="download"></iframe> -->
                       <p align="center"><iframe src="GeneChouCV.pdf" width="85%" height="1000vh" style="border: none;" allow="download"></iframe></p>
